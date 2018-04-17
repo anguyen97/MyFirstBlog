@@ -36,17 +36,20 @@ class GoogleController extends Controller
             'name' => $user->name,
             'avatar' => $user->avatar,
             'password' => md5(''),
+            'google_id' => $user->id,
         );
-        // dd($user);
+        dd($user);
         
         //save db
         // $user = Admin::create($data);
 
         //admin
-        $user_exist = Auth::find($user->email);
-        dd($user_exist);
+        $user_exist = Admin::where('email',$user->email)->get();
+        
+
+
         $a = Auth::guard('admin')->login($user);
-        // dd($a);
+
         // Auth::guard('admin')->loginUsingId($user->id);
 
         //user

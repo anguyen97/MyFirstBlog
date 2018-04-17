@@ -165,6 +165,7 @@ return [
          */
         
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Weidner\Goutte\GoutteServiceProvider::class,
 
     ],
 
@@ -217,6 +218,10 @@ return [
 
         // Login with Google
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        /**
+         * Other
+         */
+        'Goutte' => Weidner\Goutte\GoutteFacade::class,
 
     ],
 

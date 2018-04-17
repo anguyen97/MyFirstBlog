@@ -13,6 +13,7 @@
         "laravel/tinker": "^1.0",
         "lavary/laravel-menu": "^1.7",
         "rtconner/laravel-tagging": "~2.2",
+        "weidner/goutte": "^1.0",
         "yajra/laravel-datatables-fractal": "^1.0"
     },
     "require-dev": {

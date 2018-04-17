@@ -98,7 +98,7 @@
 					<tbody>	
 						@foreach ($categories as $category)
 						<tr id="row-{{$category['id']}}">
-							<td width="5%">{{ $category['id'] }}</td>
+							<td width="5%"><a class="btn-circle btn-default btn" href="{{ asset('admin/categories/') }}/{{ $category['id'] }}/posts">{{ $category['id'] }}</a></td>
 							<td>{{ $category['name'] }}</td>
 							<td>{{$category['level']}}</td>
 							<td>{{$category['parent_id'] }}</td>

@@ -79,6 +79,8 @@ Route::prefix('admin')->middleware('admin')->group(function(){
 
 		Route::get('/{id}','Admin\CategoryController@show')->name('categories.show');
 
+		Route::get('/{id}/posts','Admin\CategoryController@listPost')->name('categories.listPost');
+
 		Route::post('/store','Admin\CategoryController@store')->name('categories.store');
 
 		Route::put('/update/{id}', 'Admin\CategoryController@update')->name('categories.update');
